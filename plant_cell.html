@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Cell Interactive Diagram</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('.map').maphilight();
+    });
+  </script>
+  <link rel="icon" type="image/x-icon" href="cell.png">
+  </head>
+  <body>
+  <center>
+    <nav aria-label="Top Navigation">
+      <ul>
+        <a href="index.html"><li class="select"> Home </li></a>
+        <a href="animal_cell.html"><li class="select"> Animal Cell </li></a>
+      </ul>
+    </nav>
+  <center>
+    <div class="container">
+        <h1>Interactive Plant Cell Diagram</h1>
+        <div class="cell-diagram" id="cellDiagram">
+          <center>
+            <img src="plant_cell.png" usemap="#cellmap" class="map">
+            <map name="cellmap">
+              <area alt="Nucleus" data-part="Nucleus" coords="144,53,161,49,181,52,194,74,199,91,180,128,154,135,133,127,120,94,126,64" shape="poly">
+              <area alt="Endoplasmic Reticulum" data-part="Endoplasmic Reticulum" coords="169,41,164,27,128,21,105,42,102,86,113,101,120,61,140,47" shape="poly">
+              <area alt="Endoplasmic Reticulum" data-part="Endoplasmic Reticulum" coords="205,80,189,126,159,143,184,149,207,129,217,110" shape="poly">
+              <area alt="Vacuole" data-part="Vacuole" coords="139,150,100,96,80,84,49,107,44,144,61,165,83,205,107,236,152,248,180,232,192,217,192,190,187,165" shape="poly">
+              <area alt="Chloroplast" data-part="Chloroplast" coords="78,222,86,217,96,228,100,238,102,251,91,258,80,239" shape="poly">
+              <area alt="Chloroplast" data-part="Chloroplast" coords="47,178,52,171,59,172,61,178,62,184,59,194,58,203,50,208,42,202,43,187" shape="poly">
+              <area alt="Chloroplast" data-part="Chloroplast" coords="72,49,72,38,79,34,85,38,95,54,94,65,86,68,78,60" shape="poly">
+              <area alt="Chloroplast" data-part="Chloroplast" coords="196,227,189,237,187,256,191,264,198,265,204,256,209,243,205,230" shape="poly">
+              <area alt="Mitochondria" data-part="Mitochondria" coords="43,35,37,42,30,56,32,68,39,71,45,66,46,55,55,39,50,34" shape="poly">
+              <area alt="Mitochondria" data-part="Mitochondria" coords="203,151,203,168,203,179,214,177,217,168,217,156,210,147" shape="poly">
+              <area alt="Golgi Apparatus" data-part="Golgi Apparatus" coords="38,220,34,226,39,233,35,238,42,246,48,252,52,256,75,257,74,241,64,221" shape="poly">
+              <area alt="Peroxisome" data-part="Peroxisome" coords="41,163,8" shape="circle">
+              <area alt="Peroxisome" data-part="Peroxisome" coords="72,69,7" shape="circle">
+              <area alt="Peroxisome" data-part="Peroxisome" coords="194,38,9" shape="circle">
+              <area alt="Peroxisome" data-part="Peroxisome" coords="119,250,9" shape="circle">
+              <area alt="Peroxisome" data-part="Peroxisome" coords="168,252,8" shape="circle">
+              <area alt="Peroxisome" data-part="Peroxisome" coords="207,203,7" shape="circle">
+              <area alt="Ribosome" data-part="Ribosome" coords="172,27,4" shape="circle">
+              <area alt="Ribosome" data-part="Ribosome" coords="176,37,5" shape="circle">
+              <area alt="Ribosome" data-part="Ribosome" coords="209,67,6" shape="circle">
+              <area alt="Cell Membrane" data-part="Cell Membrane" coords="27,269,28,156,27,108,25,79,15,43,16,28,94,16,119,16,137,12,213,24,227,180,215,274,39,267,218,268,214,22,65,22,42,26,20,28" shape="poly">
+              <area alt="Cell Wall" data-part="Cell Wall" coords="77,12,226,13,231,287,17,283,23,105,18,68,7,43,12,19,23,277,226,280,225,12,121,4,26,18" shape="poly">
+              <area alt="Cytoplasm" data-part="Cytoplasm" coords="23,29,211,27,215,263,30,263" shape="poly">
+            </map>
+            </center>
+        </div>
+        <div class="description">
+            <p id="partDescription">Hover over a part of the cell to see its description.</p>
+        </div>
+    </div>
+    </center>
+</body>
+</html>

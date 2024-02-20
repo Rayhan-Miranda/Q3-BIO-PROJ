@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Cell Interactive Diagram</title>
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('.map').maphilight();
+    });
+  </script>
+  <link rel="icon" type="image/x-icon" href="cell.png">
+</head>
+<body>
+  <center>
+    <nav aria-label="Top Navigation">
+      <ul>
+        <a href="index.html"><li class="select"> Home </li></a>
+        <a href="plant_cell.html"><li class="select"> Plant Cell </li></a>
+      </ul>
+    </nav>
+    <div class="container">
+        <h1>Interactive Animal Cell Diagram</h1>
+        <div class="cell-diagram" id="cellDiagram">
+          <center>
+            <img src="animal_cell.png" usemap="#cellmap" class="map">
+            <map name="cellmap">
+              <area alt="Cell Membrane" data-part="Cell Membrane" coords="186,331,249,376,307,383,365,368,421,320,460,140,423,62,343,29,258,37,185,92,152,172,168,225,168,204,169,155,203,95,223,80,281,48,370,42,411,67,452,113,415,299,377,345,323,368,244,360,208,336,168,234,171,291" shape="poly">
+              <area alt="Endoplasmic Reticulum" data-part="Endoplasmic Reticulum" coords="277,186,279,204,241,189,248,109,262,93,278,78,287,71,336,81,314,114,296,134,285,144,279,162" shape="poly">
+              <area alt="Nucleus" data-part="Nucleus" coords="353,119,320,121,297,137,285,156,283,171,290,191,317,207,353,205,371,196,381,184,387,169,387,145,375,130" shape="poly">
+              <area alt="Endoplasmic Reticulum" data-part="Endoplasmic Reticulum" coords="386,131,381,115,405,108,420,138,422,168,415,200,395,231,347,242,324,230,323,214,338,214,364,208,393,189,395,154" shape="poly">
+              <area alt="Ribosomes" data-part="Ribosome" coords="291,205,7" shape="circle">
+              <area alt="Ribosomes" data-part="Ribosome" coords="284,223,5" shape="circle">
+              <area alt="Ribosomes" data-part="Ribosome" coords="339,92,5" shape="circle">
+              <area alt="Lysosomes" data-part="Lysosome" coords="238,320,15" shape="circle">
+              <area alt="Lysosomes" data-part="Lysosome" coords="194,189,13" shape="circle">
+              <area alt="Golgi apparatus" data-part="Golgi Apparatus" coords="311,317,37" shape="circle">
+              <area alt="Mitochondria" data-part="Mitochondria" coords="398,264,413,267,411,287,394,311,372,318,361,304" shape="poly">
+              <area alt="Mitochondria" data-part="Mitochondria" coords="196,229,210,217,228,282,217,298,194,267" shape="poly">
+              <area alt="Mitochondria" data-part="Mitochondria" coords="223,89,233,96,224,111,215,135,208,144,192,140,196,118,204,97" shape="poly">
+              <area alt="Centrosome" data-part="Centrosome" coords="261,226,273,231,307,229,309,276,297,275,243,268,238,259" shape="poly">
+              <area class ="cytoplasm" alt="Cytoplasm" data-part="Cytoplasm" coords="255,359,312,365,380,341,422,286,433,235,447,172,441,116,415,68,383,47,343,36,306,39,267,51,235,68,209,87,173,140,165,179,175,246,193,319,220,346" shape="poly">
+            </map>
+          </center>
+        </div>
+        <div class="description">
+            <p id="partDescription">Hover over a part of the cell to see its description.</p>
+        </div>
+    </div>
+    </center>
+</body>
+</html>
