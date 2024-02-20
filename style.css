@@ -1,0 +1,65 @@
+* {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+  background-color: mediumpurple;
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: gray;
+  border: inset black 2px;
+  height: 45px;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+  height: 100%;
+}
+
+li.select {
+  display: block;
+  float: left;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  height: 61%;
+  margin:0px 50px;
+} 
+
+li:hover {
+  background-color: #413e3e;
+  color: whitesmoke;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cell-diagram {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-top: 20px;
+  justify-content: center;
+}
+
+.cell-options{
+  display: flex;
+}
+.cell-options > a {
+  align-items: center;
+}
+
+.cytoplasm {
+  position: fixed;
+  z-index: 0;
+}
