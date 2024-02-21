@@ -18,6 +18,7 @@ ul {
   list-style-type: none;
   display: inline;
   height: 100%;
+  max-width: 100%;
 }
 
 li.select {
@@ -28,7 +29,7 @@ li.select {
   text-decoration: none;
   padding: 1%;
   color: black;
-  height: 61%;
+  height: 50%;
   margin:0px 5%;
 } 
 
@@ -54,13 +55,9 @@ li:hover {
   justify-content: center;
 }
 
-.cell-options{
-  display: flex;
+img {
+  max-width: 100%;
 }
-.cell-options > a {
-  align-items: center;
-}
-
 .cytoplasm {
   position: fixed;
   z-index: 0;
