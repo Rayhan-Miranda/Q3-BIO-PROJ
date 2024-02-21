@@ -58,6 +58,14 @@ li:hover {
 img {
   max-width: 100%;
 }
+
+.cell-options{
+  display: flex;
+}
+.cell-options > a {
+  align-items: center;
+}
+
 .cytoplasm {
   position: fixed;
   z-index: 0;
